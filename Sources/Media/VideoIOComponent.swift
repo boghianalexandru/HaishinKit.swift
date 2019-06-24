@@ -395,6 +395,7 @@ final class VideoIOComponent: IOComponent {
         }
 
         if drawable != nil || !effects.isEmpty {
+			//TODO: ! draw original image 
             let image: CIImage = effect(buffer, info: sampleBuffer)
             extent = image.extent
             if !effects.isEmpty {
